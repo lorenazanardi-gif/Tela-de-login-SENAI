@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from;
+import React, { useState } from 'react';
 import { supabase } from '../../lib/supabase';
 
 export default function LoginPage() {
@@ -8,6 +8,7 @@ export default function LoginPage() {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
+
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
